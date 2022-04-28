@@ -11,3 +11,4 @@
 - Wait a few seconds for the website to update (see status in `Settings -> Pages` in the Github repository)
     - If "your site is ready to be published", it hasn't updated yet
     - If "your site is published", it has been updated
+- Go to `s174508.github.io/SocialData/`
