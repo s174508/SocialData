@@ -8,6 +8,6 @@
 - Open terminal in `Hugo/SocialData`
 - Run `hugo`
 - Commit and push
-- Wait a few seconds for the website to update (see status in Settings -> Pages in Github)
+- Wait a few seconds for the website to update (see status in `Settings -> Pages` in the Github repository)
     - If "your site is ready to be published", it hasn't updated yet
     - If "your site is published", it has been updated
