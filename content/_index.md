@@ -9,6 +9,13 @@ Her er noget brødtekst\
 \
 Man kan også skifte linje mange gange
 
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+$$\frac{2}{4}$$
+
 <iframe src="/SocialData/html/map1.html"
 	sandbox="allow-same-origin allow-scripts"
 	width="1000"
