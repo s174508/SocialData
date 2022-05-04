@@ -55,10 +55,19 @@ $$kW\\_per\\_km2 = \\frac{sum\\_of\\_kW\\_capacities}{area\\_of\\_municipality}$
 
 *The figure below shows the kW per km2 plotted against the average income in each municipality. You can hover the cursor over each point in the plot to see the name of the municipality.*
 
-<iframe src="/SocialData/html/scatterplot1.html"
+<iframe src="/SocialData/html/scatter_inc.html"
 	sandbox="allow-same-origin allow-scripts"
-	style="width:100%"
-	height="800"
+	width="410"
+	height="410"
+	scrolling="no"
+	seamless="seamless"
+	frameborder="0">
+</iframe>
+
+<iframe src="/SocialData/html/scatter_inc2.html"
+	sandbox="allow-same-origin allow-scripts"
+	width="410"
+	height="410"
 	scrolling="no"
 	seamless="seamless"
 	frameborder="0">
@@ -79,6 +88,15 @@ We think it’s worthwhile to consider other factors than just wealth when looki
 It’s difficult to determine which locations would be suitable for wind turbine placement, but there are [laws](https://www.retsinformation.dk/eli/lta/2019/923) that restrict wind turbine placement based on their distance to residential buildings. We don’t have any good data on this, but we can make a crude estimate based on the terrain of each municipality.
 
 *Below you’ll find additional scatter plots with municipal data collected from Statistics Denmark* **[ref]**, **[ref]**, **[ref]***. This time you can also click on a point in one scatter plot to highlight it in all three scatter plots.*
+
+<iframe src="/SocialData/html/scatter_pop_area_wind.html"
+	sandbox="allow-same-origin allow-scripts"
+	width="100%"
+	height="400"
+	scrolling="no"
+	seamless="seamless"
+	frameborder="0">
+</iframe>
 
 # Conclusion
 
