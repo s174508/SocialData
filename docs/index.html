@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Wind turbines | Main page</title>
+    <title>Wind turbines – not in my backyard! | Main page</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="The last theme you&#39;ll ever need. Maybe.">
     <meta name="generator" content="Hugo 0.95.0" />
@@ -36,14 +36,14 @@
       
     
     
-    <meta property="og:title" content="Wind turbines" />
+    <meta property="og:title" content="Wind turbines – not in my backyard!" />
 <meta property="og:description" content="The last theme you&#39;ll ever need. Maybe." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://s174508.github.io/SocialData/" />
 
-<meta itemprop="name" content="Wind turbines">
+<meta itemprop="name" content="Wind turbines – not in my backyard!">
 <meta itemprop="description" content="The last theme you&#39;ll ever need. Maybe."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Wind turbines"/>
+<meta name="twitter:title" content="Wind turbines – not in my backyard!"/>
 <meta name="twitter:description" content="The last theme you&#39;ll ever need. Maybe."/>
 
 	
@@ -92,7 +92,7 @@
 
       <div class="tc-l pv3 ph3 ph4-ns">
         <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
-          Wind turbines
+          Wind turbines – not in my backyard!
         </h1>
         
       </div>
@@ -103,17 +103,22 @@
     <main class="pb7" role="main">
       
  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-    <h2 id="man-kan-bruge--for-at-skifte-linje">Der er noget tyk tekst her. <br>
-Man kan bruge &ldquo;\&rdquo; for at skifte linje</h2>
-<p>Her er noget brødtekst<br>
-<br>
-<br>
-Man kan også skifte linje mange gange</p>
+    <p>North Sealand is the home of some of the wealthiest people in Denmark, including presidents of wind turbine companies and ministers who promote wind energy. Meanwhile, North Sealand is the only area in the country with almost no wind turbines. Though these powerful people advocate for more wind energy, they themselves get to live in a comfortable distance from the turbines while the rest of the Danish population has to live with the sight and the noise of these monstrosities.</p>
+<p>This is the message put forth in an article by Ekstra Bladet <strong>[ref]</strong>, claiming that the placement of turbines is unfair to the advantage of the richest people. In a contribution to the debate by Information <strong>[ref]</strong>, the writer perceives the placement of turbines as a class struggle which the poor people in the countryside are losing.</p>
+<p>The whole discussion sounds like an example of the phenomenon <a href="https://en.wikipedia.org/wiki/NIMBY">NIMBY</a> – “not in my backyard”: Most people have a positive attitude towards wind energy in general, but do not want the turbines close to themselves. The transition to green energy is highly important today, and it only seems fair that every part of the country takes their part of the responsibility.</p>
+<p>But is the media right to criticize the wealthy parts of Denmark for not having enough turbines? We are now going to investigate this question in more depth.</p>
 <script type="text/javascript"
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
-<p>$$\frac{2}{4}$$</p>
-<iframe src="/SocialData/html/map1.html"
+<h1 id="who-is-responsible-for-the-placement-of-wind-turbines">Who is responsible for the placement of wind turbines?</h1>
+<p>When criticizing the placement of wind turbines, it is relevant to ask who actually decides where they are installed. However, the answer to this question is not so simple. The decisions are a result of discussions and negotiations between several parties such as the government, the municipal politicians and the local populations. The government determines the national climate goals, but they collaborate with the municipalities to determine suitable spots for turbines. Afterwards, companies can propose to build wind turbines in these spots. In some cases the locals protest against a wind turbine project, which leads to delays and sometimes abandonment of the project. So usually a lot of people have an influence on the projects, and we cannot place the responsibility on a single party. <strong>nævn at planlægningen er kommunal og derfor kigger vi på kommuner[reference???]</strong></p>
+<p><strong>Since a lot of the decisions and planning happen on a municipal level, we are going to</strong></p>
+<h1 id="where-are-the-wind-turbines-located">Where are the wind turbines located?</h1>
+<p>Let’s start out by taking a look at the locations of the wind turbines in Denmark.</p>
+<p>The Danish Energy Agency published a dataset containing all the wind turbines which contribute to (or have earlier contributed to) the Danish electrical power grid. The data features the GPS coordinates of each individual turbine, along with information about its size, model, kW-capacity, municipality, and other things. We will only consider turbines on land, since <strong>bla bla.</strong></p>
+<p>The income data is collected from Statistics Denmark <strong>[ref]</strong>.</p>
+<p><em>The turbine locations are shown in the map below. If you click the button in the upper right corner, you can additionally choose to see the municipalities colored after average income. In the upper left corner you can zoom in and out.</em></p>
+<iframe src="/SocialData/html/map_loc_inc.html"
 	sandbox="allow-same-origin allow-scripts"
 	width="1000"
 	height="700"
@@ -121,6 +126,12 @@ Man kan også skifte linje mange gange</p>
 	seamless="seamless"
 	frameborder="0">
 </iframe>
+<p>We observe that there are indeed very few wind turbines in North Sealand, which is also the richest area in Denmark. But is this a general trend in all of Denmark?</p>
+<h1 id="is-there-a-correlation-between-wealth-and-amount-of-turbines">Is there a correlation between wealth and amount of turbines?</h1>
+<p>To investigate this correlation, one option would be to simply plot the number of turbines per km2 against the average income in each municipality. However, the turbines are not identical. The boxplot below shows the distribution of kW-capacities of the turbines. They range all the way from 10 kW to 14000 kW, with the vast majority being below 2000 kW.</p>
+<p>Since high-capacity turbines have the ability to produce more electricity than the small ones, it does not seem fair to just compare the number of turbines. Instead, we make the following calculation for each municipality:</p>
+<p>$$kW\_per\_km2 = \frac{sum\_of\_kW\_capacities}{area\_of\_municipality}$$</p>
+<p><em>The figure below shows the kW per km2 plotted against the average income in each municipality. You can hover the cursor over each point in the plot to see the name of the municipality.</em></p>
 <iframe src="/SocialData/html/scatterplot1.html"
 	sandbox="allow-same-origin allow-scripts"
 	style="width:100%"
@@ -129,6 +140,14 @@ Man kan også skifte linje mange gange</p>
 	seamless="seamless"
 	frameborder="0">
 </iframe>
+<p>It seems from the plot like there is a negative correlation between average income and density of turbines, and the correlation is indeed -0.39. However, it does not look like there is a linear relationship, so correlation is not the best measure in this situation. Also, notice that a few outliers make the relationship seem a lot stronger. These outliers are a few municipalities with a very high average income, and a few with a very high density of turbines.</p>
+<p>If we really wanted to confirm the claim of Ekstra Bladet, we could show this plot and say: &ldquo;This demonstrates that wealthier the municipality, the less turbines they have!&rdquo; But of course that analysis would be incomplete. The fact is, there could be many other factors contributing to the placement of wind turbines.</p>
+<h1 id="relevant-factors-for-the">Relevant factors for the</h1>
+<p>We think it’s worthwhile to consider other factors than just wealth when looking for an explanation for the distribution of wind turbines. Factors like the population density or amount of suitable area naturally limits the amount of suitable spots for wind turbines, and locations with high wind speeds might be more attractive for wind turbines than locations without much wind.</p>
+<h2 id="suitable-areas">Suitable areas</h2>
+<p>It’s difficult to determine which locations would be suitable for wind turbine placement, but there are <a href="https://www.retsinformation.dk/eli/lta/2019/923">laws</a> that restrict wind turbine placement based on their distance to residential buildings. We don’t have any good data on this, but we can make a crude estimate based on the terrain of each municipality.</p>
+<p><em>Below you’ll find additional scatter plots with municipal data collected from Statistics Denmark</em> <strong>[ref]</strong>, <strong>[ref]</strong>, <strong>[ref]</strong><em>. This time you can also click on a point in one scatter plot to highlight it in all three scatter plots.</em></p>
+<h1 id="conclusion">Conclusion</h1>
 
   </article>
   
