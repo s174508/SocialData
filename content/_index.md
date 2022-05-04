@@ -64,6 +64,15 @@ $$kW\\_per\\_km2 = \\frac{sum\\_of\\_kW\\_capacities}{area\\_of\\_municipality}$
 	frameborder="0">
 </iframe>
 
+<iframe src="/SocialData/html/scatter_inc.html"
+	sandbox="allow-same-origin allow-scripts"
+	width="410"
+	height="410"
+	scrolling="no"
+	seamless="seamless"
+	frameborder="0">
+</iframe>
+
 It seems from the plot like there is a negative correlation between average income and density of turbines, and the correlation is indeed -0.39. However, it does not look like there is a linear relationship, so correlation is not the best measure in this situation. Also, notice that a few outliers make the relationship seem a lot stronger. These outliers are a few municipalities with a very high average income, and a few with a very high density of turbines. 
 
 If we really wanted to confirm the claim of Ekstra Bladet, we could show this plot and say: "This demonstrates that wealthier the municipality, the less turbines they have!" But of course that analysis would be incomplete. The fact is, there could be many other factors contributing to the placement of wind turbines.
