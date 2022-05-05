@@ -33,7 +33,7 @@ The income data is collected from Statistics Denmark **[ref]**.
 
 *The turbine locations are shown in the map below. If you click the button in the upper right corner, you can additionally choose to see the municipalities colored after average income. In the upper left corner you can zoom in and out.*
 
-<iframe src="/SocialData/html/map_loc_inc.html"
+<iframe src="/SocialData/html/map_loc_inc_hacked.html"
 	sandbox="allow-same-origin allow-scripts"
 	width="1000"
 	height="700"
@@ -48,6 +48,8 @@ We observe that there are indeed very few wind turbines in North Sealand, which 
 # Is there a correlation between wealth and amount of turbines?
 
 To investigate this correlation, one option would be to simply plot the number of turbines per km2 against the average income in each municipality. However, the turbines are not identical. The boxplot below shows the distribution of kW-capacities of the turbines. They range all the way from 10 kW to 14000 kW, with the vast majority being below 2000 kW.
+
+{{< figure src="/SocialData/images/boxplot_kW.png" >}}
 
 Since high-capacity turbines have the ability to produce more electricity than the small ones, it does not seem fair to just compare the number of turbines. Instead, we make the following calculation for each municipality:
 
@@ -84,6 +86,17 @@ It’s difficult to determine which locations would be suitable for wind turbine
 	sandbox="allow-same-origin allow-scripts"
 	width="100%"
 	height="400"
+	scrolling="no"
+	seamless="seamless"
+	frameborder="0">
+</iframe>
+
+I've hacked the matrix:
+
+<iframe src="/SocialData/html/map_kW_inc_wind_hacked.html"
+	sandbox="allow-same-origin allow-scripts"
+	width="1000"
+	height="700"
 	scrolling="no"
 	seamless="seamless"
 	frameborder="0">

@@ -118,7 +118,7 @@
 <p>The Danish Energy Agency published a dataset containing all the wind turbines which contribute to (or have earlier contributed to) the Danish electrical power grid. The data features the GPS coordinates of each individual turbine, along with information about its size, model, kW-capacity, municipality, and other things. We will only consider turbines on land, since <strong>bla bla.</strong></p>
 <p>The income data is collected from Statistics Denmark <strong>[ref]</strong>.</p>
 <p><em>The turbine locations are shown in the map below. If you click the button in the upper right corner, you can additionally choose to see the municipalities colored after average income. In the upper left corner you can zoom in and out.</em></p>
-<iframe src="/SocialData/html/map_loc_inc.html"
+<iframe src="/SocialData/html/map_loc_inc_hacked.html"
 	sandbox="allow-same-origin allow-scripts"
 	width="1000"
 	height="700"
@@ -129,6 +129,9 @@
 <p>We observe that there are indeed very few wind turbines in North Sealand, which is also the richest area in Denmark. But is this a general trend in all of Denmark?</p>
 <h1 id="is-there-a-correlation-between-wealth-and-amount-of-turbines">Is there a correlation between wealth and amount of turbines?</h1>
 <p>To investigate this correlation, one option would be to simply plot the number of turbines per km2 against the average income in each municipality. However, the turbines are not identical. The boxplot below shows the distribution of kW-capacities of the turbines. They range all the way from 10 kW to 14000 kW, with the vast majority being below 2000 kW.</p>
+<figure><img src="/SocialData/images/boxplot_kW.png"/>
+</figure>
+
 <p>Since high-capacity turbines have the ability to produce more electricity than the small ones, it does not seem fair to just compare the number of turbines. Instead, we make the following calculation for each municipality:</p>
 <p>$$kW\_per\_km2 = \frac{sum\_of\_kW\_capacities}{area\_of\_municipality}$$</p>
 <p><em>The figure below shows the kW per km2 plotted against the average income in each municipality. You can hover the cursor over each point in the plot to see the name of the municipality.</em></p>
@@ -151,6 +154,15 @@
 	sandbox="allow-same-origin allow-scripts"
 	width="100%"
 	height="400"
+	scrolling="no"
+	seamless="seamless"
+	frameborder="0">
+</iframe>
+<p>I&rsquo;ve hacked the matrix:</p>
+<iframe src="/SocialData/html/map_kW_inc_wind_hacked.html"
+	sandbox="allow-same-origin allow-scripts"
+	width="1000"
+	height="700"
 	scrolling="no"
 	seamless="seamless"
 	frameborder="0">
