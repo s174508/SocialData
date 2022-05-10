@@ -2,23 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://s174508.github.io/SocialData/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://s174508.github.io/SocialData/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://s174508.github.io/SocialData/data_viz/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://s174508.github.io/SocialData/elmo/</loc>
+    <loc>https://s174508.github.io/SocialData/explainer-notebook/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://s174508.github.io/SocialData/tags/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://s174508.github.io/SocialData/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
