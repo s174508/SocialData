@@ -9,6 +9,8 @@ featured_image: '/images/denmark_figures-1.png'
 
 <p align="center" style="font-size:60px"> <b>Wind turbines – not in my backyard!</b> </p>
 
+*By: Andreas Ammitzbøll, Mads Westermann, Rikke Rasmussen. Date: 10/05/2022*
+
 North Sealand is home to some of the wealthiest people in Denmark, including presidents of wind turbine companies and ministers who promote wind energy. Meanwhile, North Sealand is the only area in the country with almost no wind turbines. Though these powerful people advocate for more wind energy, they themselves get to live at a comfortable distance from the turbines while the rest of the Danish population has to live with the sight and the noise of these monstrosities.
 
 This is the message put forth in an article by Ekstra Bladet [[1]](https://ekstrabladet.dk/nyheder/samfund/article4813498.ece), claiming that the placement of turbines is unfair to the advantage of the richest people. In a contribution to the debate by Information [[2]](https://www.information.dk/debat/2022/03/placeringen-vindmoeller-klassekamp-fattige-udkant-ved-tabe), the writer perceives the placement of turbines as a class struggle which the poor people in the countryside are losing.
@@ -28,6 +30,7 @@ If we want to fact-check the article by Ekstra Bladet, we need some data describ
 
 *The turbine locations are shown in the map below. If you click the button in the upper right corner, you can additionally choose to see the municipalities colored after average income. In the upper left corner you can zoom in and out, or double click on the map to zoom in.*
 
+<p align="center">
 <iframe src="/SocialData/html/map_loc_inc_hacked.html"
 	sandbox="allow-same-origin allow-scripts"
 	width="1000"
@@ -36,6 +39,7 @@ If we want to fact-check the article by Ekstra Bladet, we need some data describ
 	seamless="seamless"
 	frameborder="0">
 </iframe>
+<p>
 
 North Sealand does indeed seem very bare compared to the rest of Denmark, and the colored map shows that North Sealand contains the wealthiest municipalities in Denmark. Let’s explore if there is a trend for all municipalities of Denmark.
 
@@ -104,6 +108,7 @@ This is probably the most accurate representation of the wind resources in Denma
 
 *The map below initially shows the average wind speed for each municipality in Denmark. You can hover the cursor over the municipalities to see the exact wind speed values. Click the button in the upper right corner to choose between the other categories.*
 
+<p align="center">
 <iframe src="/SocialData/html/map_wind_kW_suited_pop_hacked.html"
 	sandbox="allow-same-origin allow-scripts"
 	width="1000"
@@ -112,6 +117,7 @@ This is probably the most accurate representation of the wind resources in Denma
 	seamless="seamless"
 	frameborder="0">
 </iframe>
+</p>
 
 By inspecting the different categories in the map, it is clear that the municipalities with the most kW-capacity per km2 are also some of the areas with the most wind. Also note that North Sealand, the main villain of the article of Ekstra Bladet, is one of the least windy areas. Now let’s look at the scatter plots to get a better idea of the relationships between the categories.
 
@@ -131,7 +137,7 @@ By inspecting the different categories in the map, it is clear that the municipa
 These scatter plots show us that the kW-capacity has a connection with both population density, percentage of suitable area and average wind speed. All these three categories seem to have a stronger connection to the kW-capacity than the average income, suggesting that space and wind resources have more influence on the placement of turbines. You can also find the rich municipalities in the upper left plot and highlight them to see that a lot of them have a low percentage of suited area and a low average wind speed. However, we can find some exceptions. For instance, Solrød has around 55% suited area, and Dragør has a decent average wind speed of 5.1. The municipalities København and Hvidovre stand out by having a quite high kW-capacity despite having a very low percentage of suitable area and high population density. This gives hope that finding space for wind turbines is within the realm of possibilities for more of the densely populated municipalities too.
 
 
-# Conclusion
+# Some municipalities are more suited for turbines than others - but everyone should still strive to contribute
 
 Our investigation shows clearly that the high-income municipalities of North Sealand, like stated in Ekstra Bladet, indeed don’t have any wind turbines. This naturally begs the question if wealthier municipalities have more power to oppose wind turbine projects, but we don’t find that there is a general trend that higher income means less wind power. This is why we think that other factors might be better at explaining the lack of wind turbines. It turns out that there is a much stronger connection with the amount of suited area and the population density (two factors that are also related themselves), which is also the main explanation given by municipal mayors when asked about their lack of turbines [[14]](https://www.tv2lorry.dk/tv-2/nordsjaellandske-kommuner-takker-nej-til-vindmoeller-i-forvejen-har-de-ikke-en-eneste). The amount of wind could be another factor influencing the willingness to build wind turbines because more wind means more potential for wind energy. We see this connection especially in some of the windy coastal areas having a high amount of turbines.
 
