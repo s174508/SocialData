@@ -3,9 +3,9 @@ title: "Wind turbines – not in my backyard!"
 ---
 
 
-North Sealand is the home of some of the wealthiest people in Denmark, including presidents of wind turbine companies and ministers who promote wind energy. Meanwhile, North Sealand is the only area in the country with almost no wind turbines. Though these powerful people advocate for more wind energy, they themselves get to live in a comfortable distance from the turbines while the rest of the Danish population has to live with the sight and the noise of these monstrosities.
+<p align="left"> North Sealand is the home of some of the wealthiest people in Denmark, including presidents of wind turbine companies and ministers who promote wind energy. Meanwhile, North Sealand is the only area in the country with almost no wind turbines. Though these powerful people advocate for more wind energy, they themselves get to live in a comfortable distance from the turbines while the rest of the Danish population has to live with the sight and the noise of these monstrosities. </p>
 
-This is the message put forth in an article by Ekstra Bladet **[ref]**, claiming that the placement of turbines is unfair to the advantage of the richest people. In a contribution to the debate by Information **[ref]**, the writer perceives the placement of turbines as a class struggle which the poor people in the countryside are losing.
+<p align="left"> This is the message put forth in an article by Ekstra Bladet **[ref]**, claiming that the placement of turbines is unfair to the advantage of the richest people. In a contribution to the debate by Information **[ref]**, the writer perceives the placement of turbines as a class struggle which the poor people in the countryside are losing.
 
 The whole discussion sounds like an example of the phenomenon [NIMBY](https://en.wikipedia.org/wiki/NIMBY) – “not in my backyard”: Most people have a positive attitude towards wind energy in general, but do not want the turbines close to themselves. The transition to green energy is highly important today, and it only seems fair that every part of the country takes their part of the responsibility.
 
@@ -82,10 +82,10 @@ It’s difficult to determine which locations would be suitable for wind turbine
 
 *Below you’ll find additional scatter plots with municipal data collected from Statistics Denmark* **[ref]**, **[ref]**, **[ref]***. This time you can also click on a point in one scatter plot to highlight it in all three scatter plots.*
 
-<iframe src="/SocialData/html/scatter_pop_area_wind.html"
+<iframe src="/SocialData/html/scatter_inc_pop_area_wind.html"
 	sandbox="allow-same-origin allow-scripts"
-	width="100%"
-	height="400"
+	width="750"
+	height="800"
 	scrolling="no"
 	seamless="seamless"
 	frameborder="0">
@@ -93,7 +93,7 @@ It’s difficult to determine which locations would be suitable for wind turbine
 
 I've hacked the matrix:
 
-<iframe src="/SocialData/html/map_kW_inc_wind_hacked.html"
+<iframe src="/SocialData/html/map_wind_kW_suited_pop_hacked.html"
 	sandbox="allow-same-origin allow-scripts"
 	width="1000"
 	height="700"
